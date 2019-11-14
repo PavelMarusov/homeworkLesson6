@@ -1,4 +1,4 @@
-public class Mental extends Player {
+public class Mental extends Player implements SuperAbility {
     private String setMentalAttackType;
 
 
@@ -9,5 +9,10 @@ public class Mental extends Player {
 
     public void setSetMentalAttackType(String setMentalAttackType) {
         this.setMentalAttackType = setMentalAttackType;
+    }
+
+    @Override
+    public String accessSuperAbility() {
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-public class Magical extends Player {
+public class Magical extends Player implements SuperAbility {
     private String setMagicalAttackType;
 
 
@@ -9,5 +9,10 @@ public class Magical extends Player {
 
     public void setSetMagicalAttackType(String setMagicalAttackType) {
         this.setMagicalAttackType = setMagicalAttackType;
+    }
+
+    @Override
+    public String accessSuperAbility() {
+        return null;
     }
 }

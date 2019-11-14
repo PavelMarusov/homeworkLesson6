@@ -1,4 +1,4 @@
-public class Warrior extends Player {
+public class Warrior extends Player implements SuperAbility {
     private String setWarriorAttackType;
 
 
@@ -9,5 +9,10 @@ public class Warrior extends Player {
 
     public void setSetWarriorAttackType(String setWarriorAttackType) {
         this.setWarriorAttackType = setWarriorAttackType;
+    }
+
+    @Override
+    public String accessSuperAbility() {
+        return null;
     }
 }
